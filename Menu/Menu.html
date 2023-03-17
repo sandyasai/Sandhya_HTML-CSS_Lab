@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  ul{
+    list-style-type: none;
+    background-color: lightgray;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul > li {
+    display: inline;
+  }
+
+  ul > li > a {
+    display: inline-block;
+    padding: 10px;
+
+    text-decoration: none;
+    color: white;
+  }
+
+  ul > li > a:hover{
+    background-color: black;
+  }
+  #a{
+    left: 60px;
+    position: absolute;
+    visibility: hidden;
+  }
+  li:hover #a{
+    visibility: visible;
+  }
+
+  #c{
+    left: 130px;
+    position: absolute;
+    visibility: hidden;
+  }
+  li:hover #c{
+    visibility: visible;
+  }
+
+
+</style>
+
+<body>
+
+  <nav>
+    <ul>
+      <li>
+        <a href="/link1">Link1</a>        
+      </li>
+      <li>
+        <a id="b" href="/link2">Link2</a>  
+        <ul id="a">
+          <li><a href="">DD_Link_1</a></li>
+          <br>
+          <li><a href="">DD_Link_2</a></li>
+          <br>
+          <li><a href="">DD_Link_3</a></li>
+          <br>
+        </ul>      
+      </li>
+      <li>  
+        <a href="/link3">Link3</a>
+        
+        <ul id="c">
+          <li><a href="">DD_Link_1</a></li>
+          <br>
+          <li><a href="">DD_Link_2</a></li>
+          <br>
+          <li><a href="">DD_Link_3</a></li>
+          <br>
+          <li><a href="">DD_Link_4</a></li>
+          <br>
+        </ul>      
+      </li>
+    </ul>
+  </nav>
+  
+</body>
+</html>

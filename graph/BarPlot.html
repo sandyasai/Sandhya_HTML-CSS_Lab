@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #Bar_plot{
+          
+            width: 250px;
+            margin: 0 auto;
+            background-color: lightgray;
+        }
+
+        .Bar{
+            height: 400px;
+            width: 40px;
+            background-color: dark rgb(130, 115, 115); 
+            display: inline-block;
+            margin: 15px;
+            background-color: darkgray;
+        } 
+
+        .animated{
+           
+           background-color: white;
+           height: 100%;
+        }
+
+        @keyframes animated1{
+            0%{
+                height: 100%;
+            }
+            100%{
+                height: 70%;
+            }
+        }
+
+
+        #animated1{
+            animation-name: animated1;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes animated2{
+            0%{
+                height: 100%;
+            }
+            100%{
+                height: 60%;
+            }
+        }
+
+
+        #animated2{
+            animation-name: animated2;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes animated3{
+            0%{
+                height: 100%;
+            }
+            100%{
+                height: 20%;
+            }
+        }
+
+
+        #animated3{
+            animation-name: animated3;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+
+        
+        .bar-with-text-content{
+            display: inline-block;
+            text-align: center;
+        }
+        /*
+         #Bar1{ 
+            background-color: rgb(179, 46, 46);
+           
+        }
+        #Bar2{
+            background-color:  rgb(50, 23, 147);
+       
+        }
+        #Bar3{
+            background-color:rgb(137, 214, 43);
+           
+        }*/
+
+    </style>
+</head>
+<body>
+    <div id="Bar_plot">
+      <div class="bar-with-text-content">
+        <div id="Bar1" class="Bar">
+            <div id="animated1" class="animated">
+
+            </div>
+        </div>
+        <p>30%</p>
+    </div>
+       
+    <div class="bar-with-text-content">
+        <div id="Bar2" class="Bar">
+            <div id="animated2" class="animated">
+
+            </div>
+        </div>
+        <p>40%</p>
+    </div>
+
+       <div class="bar-with-text-content"> 
+        <div id="Bar3" class="Bar">
+            <div id="animated3" class="animated">
+            </div>
+        </div>
+        <p>80%</p>
+    </div>
+        
+
+    </div>
+</body>
+</html>
